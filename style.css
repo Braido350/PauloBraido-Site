@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+/* Adicione estas regras ao seu arquivo CSS (style.css) */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0; /* Cor de fundo do cabeçalho, ajuste conforme necessário */
+  }
+  
+  header img {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 20px; /* Ajuste o espaçamento à direita conforme necessário */
+  }
+  
+  header h1 {
+    margin: 0px; /* Remove a margem padrão do h1 */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Adicione uma fonte padrão, ajuste conforme necessário */
+  }
+  
+  .wrapper {
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 10 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno para o conteúdo */
+  }
+  .motos {
+    display: flex; /* Define um layout flexível para as imagens ficarem lado a lado */
+  }
+  
+  .motos img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+  }
