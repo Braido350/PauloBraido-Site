@@ -1,50 +1,62 @@
-@charset "UTF-8";
+
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* Cor de fundo para o corpo do documento */
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Cor de fundo para o conteúdo principal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para o contêiner principal */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinha os itens no cabeçalho para os lados opostos */
+}
+
+header img {
+  width: 210px; /* Ajuste a largura da imagem conforme necessário */
+  margin-right: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
 
 .container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-img {
-  margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px; /* Espaçamento à direita entre a imagem e o texto */
 }
-/* Adicione estas regras ao seu arquivo CSS (style.css) */
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f0f0f0; /* Cor de fundo do cabeçalho, ajuste conforme necessário */
-  }
-  
-  header img {
-    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
-    margin-right: 20px; /* Ajuste o espaçamento à direita conforme necessário */
-  }
-  
-  
-  header h1 {
-    margin: 0px; /* Remove a margem padrão do h1 */
-  }
+.container div {
+  flex: 1;
+  max-width: 60%;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Adicione uma fonte padrão, ajuste conforme necessário */
+@media only screen and (max-width: 768px) {
+  .container div {
+    max-width: 100%; /* Em telas menores, o texto ocupa toda a largura */
+    margin-top: 20px; /* Adiciona espaçamento acima do texto */
   }
-  
-  .wrapper {
-    max-width: 1200px; /* Ajuste conforme necessário */
-    margin: 10 auto; /* Centraliza o conteúdo horizontalmente */
-    padding: 20px; /* Adiciona algum espaçamento interno para o conteúdo */
-  }
-  .motos {
-    display: flex; /* Define um layout flexível para as imagens ficarem lado a lado */
-  }
-  
-  .motos img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-  }
+}
