@@ -8,14 +8,15 @@ body, h1, h2, p, img {
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8; /* Cor de fundo para o corpo do documento */
+  /*overflow: hidden;  Remove as barras de rolagem no corpo do documento */
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: calc(1200px - 120px); /* 120px é a soma das margens desejadas em ambos os lados */
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff; /* Cor de fundo para o conteúdo principal */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para o contêiner principal */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -25,7 +26,7 @@ header {
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Alinha os itens no cabeçalho para os lados opostos */
+  justify-content: space-between;
 }
 
 header img {
@@ -46,7 +47,7 @@ header h1 {
 .container img {
   max-width: 100%;
   height: auto;
-  margin-right: 20px; /* Espaçamento à direita entre a imagem e o texto */
+  min-width: 100px;
 }
 
 .container div {
@@ -56,7 +57,81 @@ header h1 {
 
 @media only screen and (max-width: 768px) {
   .container div {
-    max-width: 100%; /* Em telas menores, o texto ocupa toda a largura */
-    margin-top: 20px; /* Adiciona espaçamento acima do texto */
+    max-width: 100%;
+    margin-top: 20px;
   }
+}
+
+.container h1 {
+  flex: 1;
+  text-align: center; /* Centraliza o h1 */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do h1 */
+}
+
+.container p {
+  flex: 1;
+  max-width: 500px; /* Largura máxima do parágrafo em telas grandes */
+  margin: 0 auto; /* Centraliza o parágrafo */
+}
+.container div {
+  flex: 1;
+  max-width: 60%;
+  padding: 20px; /* Adiciona espaçamento interno para a div */
+}
+
+h2 {
+  text-align: center;
+}
+.destaque {
+  background-color: #f2f2f2; /* Cor de fundo para o destaque */
+  padding: 20px;
+  margin-bottom: 20px; /* Adiciona margem abaixo do destaque */
+}
+
+.destaque h2 {
+  color: #000000; /* Cor diferente para o h2 */
+}
+/* Adicione estas regras ao seu arquivo CSS (style.css) */
+
+.motos {
+  display: flex;
+  /* overflow-x: hidden; Adiciona uma barra de rolagem horizontal se necessário 
+  overflow-y: hidden;*/
+  margin-bottom: 20px; /* Adiciona uma margem inferior para separar de outros elementos */
+}
+
+.moto-item {
+  margin-right: 20px; /* Adiciona um espaçamento entre as imagens */
+  text-align: center; /* Centraliza o texto */
+}
+
+.moto-item img {
+  width: 100%; /* Ajusta a largura para 100% da largura do contêiner pai */
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover; /* Mantém a proporção da imagem, cortando se necessário */
+}
+
+.moto-item p {
+  margin-top: 10px; /* Adiciona um espaçamento acima do parágrafo */
+}
+
+.trabalho {
+  text-align: center; /* Centraliza o conteúdo na div */
+  margin-bottom: 20px; /* Adiciona espaçamento abaixo do conteúdo */
+}
+
+.contemplacoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.contemplacoes img {
+  width: calc(33.3333% - 20px);
+  margin: 10px;
+}
+
+.trabalho h3 {
+  margin-bottom: 20px;
 }
