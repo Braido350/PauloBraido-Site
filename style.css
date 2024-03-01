@@ -9,10 +9,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8; /* Cor de fundo para o corpo do documento */
   /*overflow: hidden;  Remove as barras de rolagem no corpo do documento */
+
+  max-width: calc(1200px - 120px); /* 120px é a soma das margens desejadas em ambos os lados */
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper {
-  max-width: calc(1200px - 120px); /* 120px é a soma das margens desejadas em ambos os lados */
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -120,6 +124,10 @@ h2 {
   margin-bottom: 20px; /* Adiciona espaçamento abaixo do conteúdo */
 }
 
+/* Adicione estas regras ao seu arquivo CSS (style.css) */
+
+/* Adicione estas regras ao seu arquivo CSS (style.css) */
+
 .contemplacoes {
   display: flex;
   flex-wrap: wrap;
@@ -127,11 +135,53 @@ h2 {
   margin: 0 -10px;
 }
 
-.contemplacoes img {
+.contemplacao-item {
+  position: relative;
   width: calc(33.3333% - 20px);
-  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contemplacao-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.texto-sobre-imagem {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  padding: 10px;
+  opacity: 0,9;
+  z-index: 1; /* Garante que o texto esteja acima da imagem */
+}
+
+.contemplacao-item p {
+  margin: 0;
+}
+
+
+/* Adicione uma regra de mídia para ajustar para telas menores */
+@media only screen and (max-width: 767px) {
+  .contemplacao-item {
+    width: calc(50% - 20px); /* Largura de 2 itens por linha em telas menores */
+  }
 }
 
 .trabalho h3 {
   margin-bottom: 20px;
 }
+.mapa {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 667px) {
+    .mapa {
+      display: none; /* Oculta o mapa quando a tela for menor que 667px */
+    }
+  }
