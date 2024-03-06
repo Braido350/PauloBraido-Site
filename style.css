@@ -95,7 +95,6 @@ h2 {
 .destaque h2 {
   color: #000000; /* Cor diferente para o h2 */
 }
-/* Adicione estas regras ao seu arquivo CSS (style.css) */
 
 .motos {
   display: flex;
@@ -123,10 +122,6 @@ h2 {
   text-align: center; /* Centraliza o conteúdo na div */
   margin-bottom: 20px; /* Adiciona espaçamento abaixo do conteúdo */
 }
-
-/* Adicione estas regras ao seu arquivo CSS (style.css) */
-
-/* Adicione estas regras ao seu arquivo CSS (style.css) */
 
 .contemplacoes {
   display: flex;
@@ -178,10 +173,10 @@ h2 {
 }
 .mapa {
     width: 100%;
-  }
+}
   
-  @media only screen and (max-width: 667px) {
-    .mapa {
-      display: none; /* Oculta o mapa quando a tela for menor que 667px */
-    }
+@media only screen and (max-width: 667px) {
+  .mapa {
+    display: none; /* Oculta o mapa quando a tela for menor que 667px */
   }
+}
