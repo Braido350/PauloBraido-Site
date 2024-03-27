@@ -7,10 +7,9 @@ body, h1, h2, p, img {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8; /* Cor de fundo para o corpo do documento */
-  /*overflow: hidden;  Remove as barras de rolagem no corpo do documento */
+  background-color: #f8f8f8;
 
-  max-width: calc(1200px - 120px); /* 120px é a soma das margens desejadas em ambos os lados */
+  max-width: calc(1200px - 120px);
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,7 +33,7 @@ header {
 }
 
 header img {
-  width: 210px; /* Ajuste a largura da imagem conforme necessário */
+  width: 210px;
   margin-right: 20px;
 }
 
@@ -68,59 +67,57 @@ header h1 {
 
 .container h1 {
   flex: 1;
-  text-align: center; /* Centraliza o h1 */
-  margin-bottom: 20px; /* Adiciona espaço abaixo do h1 */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .container p {
   flex: 1;
-  max-width: 500px; /* Largura máxima do parágrafo em telas grandes */
-  margin: 0 auto; /* Centraliza o parágrafo */
+  max-width: 500px;
+  margin: 0 auto;
 }
 .container div {
   flex: 1;
   max-width: 60%;
-  padding: 20px; /* Adiciona espaçamento interno para a div */
+  padding: 20px;
 }
 
 h2 {
   text-align: center;
 }
 .destaque {
-  background-color: #f2f2f2; /* Cor de fundo para o destaque */
+  background-color: #f2f2f2;
   padding: 20px;
-  margin-bottom: 20px; /* Adiciona margem abaixo do destaque */
+  margin-bottom: 20px;
 }
 
 .destaque h2 {
-  color: #000000; /* Cor diferente para o h2 */
+  color: #000000;
 }
 
 .motos {
   display: flex;
-  /* overflow-x: hidden; Adiciona uma barra de rolagem horizontal se necessário 
-  overflow-y: hidden;*/
-  margin-bottom: 20px; /* Adiciona uma margem inferior para separar de outros elementos */
+  margin-bottom: 20px;
 }
 
 .moto-item {
-  margin-right: 20px; /* Adiciona um espaçamento entre as imagens */
-  text-align: center; /* Centraliza o texto */
+  margin-right: 20px;
+  text-align: center;
 }
 
 .moto-item img {
-  width: 100%; /* Ajusta a largura para 100% da largura do contêiner pai */
-  height: auto; /* Mantém a proporção original da imagem */
-  object-fit: cover; /* Mantém a proporção da imagem, cortando se necessário */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .moto-item p {
-  margin-top: 10px; /* Adiciona um espaçamento acima do parágrafo */
+  margin-top: 10px;
 }
 
 .trabalho {
-  text-align: center; /* Centraliza o conteúdo na div */
-  margin-bottom: 20px; /* Adiciona espaçamento abaixo do conteúdo */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contemplacoes {
@@ -153,7 +150,7 @@ h2 {
   color: white;
   padding: 10px;
   opacity: 0,9;
-  z-index: 1; /* Garante que o texto esteja acima da imagem */
+  z-index: 1;
 }
 
 .contemplacao-item p {
@@ -161,10 +158,10 @@ h2 {
 }
 
 
-/* Adicione uma regra de mídia para ajustar para telas menores */
+
 @media only screen and (max-width: 767px) {
   .contemplacao-item {
-    width: calc(50% - 20px); /* Largura de 2 itens por linha em telas menores */
+    width: calc(50% - 20px);
   }
 }
 
@@ -174,9 +171,9 @@ h2 {
 .mapa {
     width: 100%;
 }
-  
+
 @media only screen and (max-width: 667px) {
   .mapa {
-    display: none; /* Oculta o mapa quando a tela for menor que 667px */
+    display: none;
   }
 }
