@@ -47,10 +47,11 @@ header h1 {
   flex-wrap: wrap;
 }
 
-.container img {
+#PauloBraido{
   max-width: 100%;
   height: auto;
   min-width: 100px;
+  border-radius: 5px;
 }
 
 .container div {
@@ -139,6 +140,7 @@ h2 {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .texto-sobre-imagem {
@@ -156,7 +158,6 @@ h2 {
 .contemplacao-item p {
   margin: 0;
 }
-
 
 
 @media only screen and (max-width: 767px) {
